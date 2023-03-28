@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Dalle
   - Caisse
-  - MovingObject
-  - Liana
   layers:
   - Default
   - TransparentFX

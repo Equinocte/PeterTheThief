@@ -14,7 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/temple2.unity
     guid: 63e691b834bbebe49a86f794e7746235
-  - enabled: 1
-    path: Assets/Scenes/qserflomfdikjimnj.unity
-    guid: c94ce1d11a182d24198276a07c8230e9
   m_configObjects: {}
