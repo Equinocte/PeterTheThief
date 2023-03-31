@@ -5,8 +5,6 @@ using UnityEngine;
 public class interact : MonoBehaviour
 {
     public GameObject cube;
-    public GameObject successText;
-    public GameObject noSuccessText;
     public GameObject interactText;
     public GameObject player;
     public Transform teleportTarget;

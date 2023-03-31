@@ -27,6 +27,7 @@ public class StickToMovingObject : MonoBehaviour
             // Parenter le joueur à l'objet
             movingObject = collision.gameObject.transform;
             transform.SetParent(movingObject);
+            transform.localScale = Vector3.one;
             isAttached = true;
         }
     }
@@ -39,6 +40,7 @@ public class StickToMovingObject : MonoBehaviour
 
             // Détacher le joueur de l'objet
             transform.SetParent(null);
+            transform.localScale = Vector3.one;
             isAttached = false;
             lastDetachTime = Time.time;
             transform.position += Vector3.forward * detachOffsetZ;
