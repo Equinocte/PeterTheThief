@@ -6,19 +6,18 @@ public class LianeTP : MonoBehaviour
 {
 
     public Transform teleportTarget; // position de la téléportation
+    public GameObject player;
 
 
-
-
-
-
-    private void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player")) // Vérifie si l'objet en collision est le joueur
+        if(other.gameObject.tag == "Player")
         {
-            collision.gameObject.transform.position = teleportTarget.position; // Téléporte le joueur à la position spécifiée
+            player.gameObject.transform.position = teleportTarget.position;
         }
     }
+
+
 
 
 }
